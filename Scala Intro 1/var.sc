@@ -13,3 +13,6 @@ val heighFloat: Float = 1.80f
 val name: String = "Nacho"
 val lastName: String = "Lasaosa"
 println(s"My name is ${name} ${lastName}")
+
+val isGreaterThan: Boolean = 1 < 2
+println(isGreaterThan) // true
