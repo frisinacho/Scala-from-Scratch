@@ -16,3 +16,4 @@ println(s"My name is ${name} ${lastName}")
 
 val isGreaterThan: Boolean = 1 < 2
 println(isGreaterThan) // true
+val isLessThan = 1 < 2
