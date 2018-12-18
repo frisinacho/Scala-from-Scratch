@@ -9,3 +9,6 @@ val lines = ssc.socketTextStream("localhost",9000,StorageLevel.MEMORY_AND_DISK_S
 val words = lines.flatMap(line => line.split(" "))
 val countWords = words.map(x => (x,1)).reduceByKey((x,y) => x + y)
 countWords.print()
+
+ssc.start()
+ssc.awaitTermination()
